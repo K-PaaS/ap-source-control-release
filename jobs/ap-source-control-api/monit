@@ -1,0 +1,5 @@
+check process ap-source-control-api
+  with pidfile /var/vcap/sys/run/ap-source-control-api/ap-source-control-api.pid
+  start program "/var/vcap/jobs/ap-source-control-api/bin/monit_debugger service_ctl '/var/vcap/jobs/ap-source-control-api/bin/service_ctl start'"
+  stop program "/var/vcap/jobs/ap-source-control-api/bin/monit_debugger service_ctl '/var/vcap/jobs/ap-source-control-api/bin/service_ctl stop'"
+  group vcap

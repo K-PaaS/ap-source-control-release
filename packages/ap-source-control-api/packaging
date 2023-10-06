@@ -1,0 +1,7 @@
+# abort script on any command that exits with a non zero value
+set -e
+
+SRC_DIR_NAME=ap-source-control-api
+WAR_NAME=ap-source-control-api
+
+cp $SRC_DIR_NAME/$WAR_NAME.jar ${BOSH_INSTALL_TARGET}

@@ -1,0 +1,8 @@
+# abort script on any command that exits with a non zero value
+set -e
+
+SRC_DIR_NAME=ap-source-control-broker
+JAR_NAME=ap-source-control-broker
+
+cp $SRC_DIR_NAME/$JAR_NAME.jar ${BOSH_INSTALL_TARGET}
+

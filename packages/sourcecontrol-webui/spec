@@ -1,7 +1,0 @@
----
-name: sourcecontrol-webui
-
-dependencies:
-
-files:
-- sourcecontrol-webui/sourcecontrol-webui.war

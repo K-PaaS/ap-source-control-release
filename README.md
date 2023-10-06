@@ -71,27 +71,27 @@
 
 
 
-## PAAS-TA-SOURCE-CONTROL-RELEASE  
+## ap-source-control-release
 
-### PaaS-TA PaaS-TA Source Control Release Configuration    
+### Application Platform Source Control Release Configuration
 
   - haproxy : 1 machine  
   - mariadb : 1 machine  
   - scm-server : 1 machine  
-  - sourcecontrol-api : 1 machine   
-  - sourcecontrol-broker : 1 machine  
-  - sourcecontrol-webui : 1 machine   
+  - ap-source-control-api : 1 machine
+  - ap-source-control-broker : 1 machine
+  - ap-source-control-ui : 1 machine
 
-### Create PaaS-TA Source Control Release  
-  - Download the latest PaaS-TA Source Control Release  
+### Create Application Platform Source Control Release
+  - Download the latest Application Platform Source Control Release
     ```   
-    $ git clone https://github.com/PaaS-TA/PAAS-TA-SOURCE-CONTROL-RELEASE.git  
-    $ cd PAAS-TA-SOURCE-CONTROL-RELEASE  
+    $ git clone https://github.com/K-PaaS/ap-source-control-release.git
+    $ cd ap-source-control-release
     ```  
   - Download & Copy "source files" into the src directory  
     ```    
     ## download source files  
-    $ wget -O src.zip https://nextcloud.paas-ta.org/index.php/s/Qn7zRFj7EtJtxRW/download
+    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/paEdwyBRQCrPsMg/download
 
     ## unzip download source files  
     $ unzip src.zip   
@@ -110,25 +110,25 @@
         │   └── mariadb-10.5.17-linux-x86_64.tar.gz
         ├── scm-server  
         │   └── scm-server-1.55-app.tar.gz  
-        ├── sourcecontrol-api  
-        │   └── sourcecontrol-api.jar  
-        ├── sourcecontrol-broker  
-        │   └── sourcecontrol-broker.jar  
-        ├── sourcecontrol-webui  
-        │   └── sourcecontrol-webui.war  
+        ├── ap-source-control-api
+        │   └── ap-source-control-api.jar
+        ├── ap-source-control-broker
+        │   └── ap-source-control-broker.jar
+        ├── ap-source-control-ui
+        │   └── ap-source-control-ui.war
         └── tomcat  
             └── apache-tomcat-8.5.91.tar.gz
     ```
-  - Create PaaS-TA Source Control Release  
+  - Create Application Platform Source Control Release
     ```  
     ## <VERSION> :: release version (e.g. 1.1.1)  
-    ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/paasta-sourcecontrol-release-<VERSION>.tgz)
-    $ bosh -e <bosh_name> create-release --name=paasta-sourcecontrol-release --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force
+    ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/ap-source-control-release-<VERSION>.tgz)
+    $ bosh -e <bosh_name> create-release --name=ap-source-control --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force
     ```  
 ### Deployment    
-  - https://github.com/PaaS-TA/service-deployment  
+  - https://github.com/K-PaaS/service-deployment
 
 ## Contributors ✨
-<a href="https://github.com/PaaS-TA/PAAS-TA-SOURCE-CONTROL-RELEASE/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PaaS-TA/PAAS-TA-SOURCE-CONTROL-RELEASE" />
+<a href="https://github.com/K-PaaS/ap-source-control-release/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=K-PaaS/ap-source-control-release" />
 </a>

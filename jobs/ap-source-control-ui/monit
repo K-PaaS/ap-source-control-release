@@ -1,0 +1,5 @@
+check process ap-source-control-ui
+  with pidfile /var/vcap/sys/run/ap-source-control-ui/ap-source-control-ui.pid
+  start program  "/var/vcap/jobs/ap-source-control-ui/bin/monit_debugger service_ctl '/var/vcap/jobs/ap-source-control-ui/bin/service_ctl start'" with timeout 20 seconds
+  stop program "/var/vcap/jobs/ap-source-control-ui/bin/monit_debugger service_ctl '/var/vcap/jobs/ap-source-control-ui/bin/service_ctl stop'" with timeout 20 seconds
+  group vcap

@@ -1,0 +1,38 @@
+server.contextPath=/
+server.port=<%= p('ap-source-control-broker.port')%>
+spring.datasource.url=<%= p('spring.datasource.url')%>
+spring.datasource.username=<%= p('spring.datasource.username')%>
+spring.datasource.password=<%= p('spring.datasource.password')%>
+spring.datasource.driver-class-name: org.mariadb.jdbc.Driver
+
+# option = create, create-drop, update, none
+spring.jpa.hibernate.ddl-auto=none
+# USE : Uppercase table names
+spring.jpa.hibernate.naming.implicit-strategy=org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+spring.jpa.database=<%= p('spring.jpa.database')%>
+# Show or not log for each sql query
+spring.jpa.show-sql=true
+
+### log level config
+logging.level.org.openpaas.servicebroker.controller=DEBUG
+logging.level.org.servicebroker.scmmanager.service=DEBUG
+
+# dashboard_url .requestMatcher.url
+dashboard.url =<%= p('dashboard.url')%>
+
+# Scm Manager Server api Info
+# Authorization (super admin)
+
+admin.id =scmadmin
+admin.pwd =<%= p("scm.admin.pwd")%>
+
+# Api
+api.base =<%= p('scm.base.url')%>
+api.users =<%= p('api.user')%>
+api.repo =<%= p('api.repo')%>
+
+# request parameter
+param.key.owner = owner
+param.key.orgname = org_name
+

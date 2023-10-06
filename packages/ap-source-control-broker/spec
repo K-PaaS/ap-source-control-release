@@ -1,0 +1,7 @@
+---
+name: ap-source-control-broker
+
+dependencies:
+
+files:
+- ap-source-control-broker/ap-source-control-broker.jar

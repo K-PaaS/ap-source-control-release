@@ -1,0 +1,40 @@
+---
+name: ap-source-control-api
+templates:
+  bin/service_ctl: bin/service_ctl
+  bin/monit_debugger: bin/monit_debugger
+  data/application.properties.erb: data/application.properties
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+packages:
+  - java8
+  - ap-source-control-api
+properties:
+  ap-source-control-api.port:
+    description: 'source-control-api.port'
+    default: 80
+  ap-source-control-api.java_opts:
+    description: 'source-control-api.java_opts'
+  spring.datasource.password:
+    description: 'spring datasource password'
+    default: ''
+  spring.datasource.url:
+    description: 'spring datasource url'
+    default: ''
+  spring.datasource.username:
+    description: 'spring datasource username'
+    default: ''
+  spring.jpa.database:
+    description: 'spring.jpa.database'
+    default: 'mysql'
+  scm.base.url:
+    description: 'scm.base.url'
+  scm.clone.url:
+    description: 'scm.clone.url'
+#  scm.admin.id:
+#    description: 'scm.admin.id'
+#    default: 'scmadmin'
+  scm.admin.pwd:
+    description: 'scm.admin.pwd'
+    default: 'scmadmin'
