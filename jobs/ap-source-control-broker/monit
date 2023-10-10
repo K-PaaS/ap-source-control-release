@@ -1,0 +1,5 @@
+check process ap-source-control-broker
+  with pidfile /var/vcap/sys/run/ap-source-control-broker/ap-source-control-broker.pid
+  start program "/var/vcap/jobs/ap-source-control-broker/bin/service_ctl start"
+  stop program "/var/vcap/jobs/ap-source-control-broker/bin/service_ctl stop"
+  group vcap

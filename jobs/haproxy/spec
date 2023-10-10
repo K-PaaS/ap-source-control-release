@@ -19,17 +19,17 @@ properties:
   haproxy.http_port:
     description: 'Haproxy http port'
     default: 80
-  sourcecontrol-webui.haproxy.urls:
-    description: 'sourcecontrol UI URL'
-  sourcecontrol-webui.port:
-    description: 'sourcecontrol UI SERVER PORT'
+  ap-source-control-ui.haproxy.urls:
+    description: 'source-control UI URL'
+  ap-source-control-ui.port:
+    description: 'source-control UI SERVER PORT'
     default: 80
-  sourcecontrol-api.haproxy.urls:
-    description: 'sourcecontrol api haproxy urls'
-  sourcecontrol-api.port:
-    description: 'sourcecontrol api port'
+  ap-source-control-api.haproxy.urls:
+    description: 'source-control api haproxy urls'
+  ap-source-control-api.port:
+    description: 'source-control api port'
   scm.haproxy.urls:
-    description: 'sourcecontrol scm haproxy urls'
+    description: 'source-control scm haproxy urls'
   scm.base.port:
-    description: 'sourcecontrol scm base port'
+    description: 'source-control scm base port'
 

@@ -28,7 +28,7 @@ FLUSH PRIVILEGES;
 
 /*
 Navicat MariaDB Data Transfer
-Source Database       : PAASTA_SRC_DB
+Source Database       : SRC_DB
 Target Server Type    : MariaDB
 Target Server Version : 100122
 Date: 2017-11-08 20:32:21

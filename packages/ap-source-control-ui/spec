@@ -1,0 +1,7 @@
+---
+name: ap-source-control-ui
+
+dependencies:
+
+files:
+- ap-source-control-ui/ap-source-control-ui.war

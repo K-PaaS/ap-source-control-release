@@ -1,0 +1,7 @@
+---
+name: ap-source-control-api
+
+dependencies:
+
+files:
+- ap-source-control-api/ap-source-control-api.jar

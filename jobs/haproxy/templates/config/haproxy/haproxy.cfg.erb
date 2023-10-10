@@ -12,36 +12,36 @@ defaults
     stats uri /admin
 
 
-#  sourcecontrol HAPROXY DEFAULT
+#  source-control HAPROXY DEFAULT
 frontend http-in
     mode http
     bind *:<%= p('haproxy.http_port')%>
-    default_backend sourcecontrol-webui_servers
+    default_backend ap-source-control-ui_servers
 
 
-# sourcecontrol_webui
-frontend http-in-sourcecontrol_webui
+# source-control_webui
+frontend http-in-ap-source-control-ui
     mode http
-    bind *:<%= p('sourcecontrol-webui.port')%>
-    default_backend sourcecontrol-webui_servers
+    bind *:<%= p('ap-source-control-ui.port')%>
+    default_backend ap-source-control-ui_servers
 
-backend sourcecontrol-webui_servers
+backend ap-source-control-ui_servers
     mode http
-<% p('sourcecontrol-webui.haproxy.urls').each_with_index do |ip, index| %>
-    server server-<%= index %> <%= ip %>:<%= p('sourcecontrol-webui.port') %>
+<% p('ap-source-control-ui.haproxy.urls').each_with_index do |ip, index| %>
+    server server-<%= index %> <%= ip %>:<%= p('ap-source-control-ui.port') %>
 <% end %>
 
 
-# sourcecontrol-api
-frontend http-in-sourcecontrol-api
+# source-control-api
+frontend http-in-ap-source-control-api
     mode http
-    bind *:<%= p('sourcecontrol-api.port')%>
-    default_backend sourcecontrol-api_servers
+    bind *:<%= p('ap-source-control-api.port')%>
+    default_backend ap-source-control-api_servers
 
-backend sourcecontrol-api_servers
+backend ap-source-control-api_servers
     mode http
-<% p('sourcecontrol-api.haproxy.urls').each_with_index do |ip, index| %>
-    server server-<%= index %> <%= ip %>:<%= p('sourcecontrol-api.port') %>
+<% p('ap-source-control-api.haproxy.urls').each_with_index do |ip, index| %>
+    server server-<%= index %> <%= ip %>:<%= p('ap-source-control-api.port') %>
 <% end %>
 
 
