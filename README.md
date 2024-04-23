@@ -84,7 +84,7 @@
   - Download & Copy "source files" into the src directory  
     ```    
     ## download source files  
-    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/D8SxcpaMnwZJdKq/download
+    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/mZgxZGKzycBimNf/download
 
     ## unzip download source files  
     $ unzip src.zip   
@@ -110,7 +110,7 @@
         ├── ap-source-control-ui
         │   └── ap-source-control-ui.war
         └── tomcat  
-            └── apache-tomcat-8.5.94.tar.gz
+            └── apache-tomcat-8.5.96.tar.gz
     ```
   - Create Application Platform Source Control Release
     ```  
